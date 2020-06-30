@@ -1,7 +1,6 @@
 var express = require('express')
 var http = require('http')
 var path = require('path')
-var reload = require('reload')
 var bodyParser = require('body-parser')
 var logger = require('morgan')
  
@@ -12,8 +11,8 @@ var srcDir = path.join(__dirname, '..', 'src')
 app.set('port', process.env.PORT || 3000)
 app.use(logger('dev'))
 app.use(bodyParser.json()) // Parses json, multi-part (file), url-encoded
- 
-app.get('/', function (req, res) {
+app.use(express.static(path.join(__dirname, '..', 'dist')));
+app.get('/', function (_req, res) {
   res.sendFile(path.join(srcDir, 'index.html'))
 })
  
