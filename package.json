@@ -1,0 +1,27 @@
+{
+  "name": "bottle-meet-people",
+  "version": "0.0.1",
+  "description": "A simple frontend for the bottle meet people app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node scripts/dev.js"
+  },
+  "author": "Arjun Raju Pillai <revarjunr@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "body-parser": "^1.19.0",
+    "coffeescript": "^2.5.1",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "less": "^3.11.3",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "reload": "^3.1.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.4.0"
+  }
+}
